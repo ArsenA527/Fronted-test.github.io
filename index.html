@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тестовый проект</title>
+</head>
+<body>
+
+    <div class="main">
+        
+        <div class="info">
+            <h1>Выберите способ доставки</h1>
+            
+
+            <div class="info-header">
+    
+                <div class="info-header-tab default">Доставка</div>
+                <div class="info-header-tab hover">Самовывоз</div>
+    
+            </div>
+    
+            <div class="info-tabcontent delivery show">
+    
+                <form action="">
+                    <div class="FA">
+                        <div class="fio-tel fio">
+                            <label for="FIO">ФИО</label>
+                            <input type = "text" placeholder="Только кирилица" pattern="^[А-Яа-яЁё\s-]+$" required id = "FIO"/>
+                        </div>
+    
+                        <div class="fio-tel tel">
+                            <label for="phone">Телефон</label>                      
+                            <input type="tel" name="tel" placeholder="+7(___) ___-__-__" required maxlength="10" id="phone">                
+                        </div>
+                       
+                    </div>
+    
+                    <div class="adress">
+                        <label for="Adress">Адрес доставки</label>
+                        <input type = "text" placeholder="Город, улица, дом" required id = "Adress"/>
+                    </div>
+                    
+                    <div class="comment">
+                        <label for="Comment">Комментарий</label>
+                        <textarea required id = "Comment"></textarea>
+                    </div>
+        
+                    
+                    <div class="footer">
+                        <button type = "submit">Оформить заказ</button>                  
+                    </div>
+    
+                </form>
+    
+            </div>
+    
+    
+            <div class="info-tabcontent pickup hide">
+               <form action="" class = "list" id = "form">
+                    <label class = "response"><input type="radio" name="response" value="1">Пункт выдачи заказов №1</label>
+                    <label class = "response"><input type="radio" name="response" value="2">Пункт выдачи заказов №2</label>
+                    <label class = "response"><input type="radio" name="response" value="3">Пункт выдачи заказов №3</label>
+                    <label class = "response"><input type="radio" name="response" value="4">Пункт выдачи заказов №4</label>
+               </form>
+
+               <div class="map">
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A56931dc8e538e142b949c973e33ee172a206737a64b3ff8914853ab5e5f8464c&amp;width=952&amp;height=560&amp;lang=ru_RU&amp;scroll=true"></script>
+               </div>
+                
+                <div class="footer">
+                    <button type = "submit" form = "form">Оформить заказ</button>
+                </div>
+            </div>
+    
+        </div>
+    </div>
+    
+
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.maskedinput.min.js"></script>
+    <script type="text/javascript" src="/js/script.js"></script>
+
+
+</body>
+</html>
